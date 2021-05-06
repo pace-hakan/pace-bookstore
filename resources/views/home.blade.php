@@ -17,6 +17,17 @@
                     {{ __('You are logged in!') }}
                 </div>
             </div>
+            <br/>
+            <div class="card">
+                <div class="card-header">Do you wanna upload/change your avatar?</div>
+                <div class="card-body">
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <input type="file" name="image" />
+                        <input type="submit" value="Upload" />
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
