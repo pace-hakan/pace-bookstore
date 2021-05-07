@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -15,9 +17,12 @@ class UserController extends Controller
         return view('user.index', ['users' => $users]);
     }
 
-    public function upload(Request $request) {
-        //dump($request->all());
-        //dump($request->image);
-        $request->image->store('images', 'public');
+    public function uploadAvatar(Request $request) {
+        if ($request->hasFile('image')) {
+            User::uploadAvatar($request->image);
+        }
+        return redirect('home')->with('message', 'Avatar uploaded.');
     }
+
+
 }
