@@ -11,11 +11,28 @@
                 </div>
                 <div class="card-body">
                     <x-alert />
-                    <h3 class="card-title">
+                    {{-- <h3 class="card-title">
                         {{'BASLIK'}}
-                    </h3>
+                    </h3> --}}
                     <p class="card-text">
-                        {{"SDASDASD"}}
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">TITLE</th>
+                                    <th scope="col">DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+@foreach ($allBooks as $book)
+                                <tr>
+                                    <th scope="row">{{$book->id}}</th>
+                                    <td>{{$book->title}}</td>
+                                    <td>{{$book->description}}</td>
+                                </tr>
+@endforeach
+                            </tbody>
+                        </table>
                     </p>
                 </div>
             </div>
