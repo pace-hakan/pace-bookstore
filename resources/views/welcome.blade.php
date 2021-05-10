@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="/storage/images/bookstore-logo.png" alt="Bookstore logo" />
+                    <img src="images/bookstore-logo.png" alt="Bookstore logo" />
                 </div>
 
                 <div class="links">
