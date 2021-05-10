@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<? $r=0; ?>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -11,6 +11,7 @@
                 </div>
                 <div class="card-body">
                     <x-alert />
+                    <div class="card-title">Click on the titles to edit the entry.</div>
                     <p class="card-text">
                         <table class="table table-striped">
                             <thead>
@@ -23,8 +24,8 @@
                             <tbody>
 @foreach ($allBooks as $book)
                                 <tr>
-                                    <th scope="row">{{$book->id}}</th>
-                                    <td>{{$book->title}}</td>
+                                    <th scope="row"><?=++$r;?></th>
+                                    <td><a href="{{route('prefix.book.edit', $book->id)}}">{{$book->title}}</a></td>
                                     <td>{{$book->description}}</td>
                                 </tr>
 @endforeach

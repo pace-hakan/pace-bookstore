@@ -61,7 +61,7 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        //
+        return view('book.edit', compact('book'));
     }
 
     /**
@@ -71,9 +71,10 @@ class BookController extends Controller
      * @param  \App\Book  $book
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Book $book)
+    public function update(BookCreateRequest $request, Book $book)
     {
-        //
+        $book->update($request->all());
+        return redirect()->route('prefix.book.index')->with('message', 'Book info UPDATED.');
     }
 
     /**

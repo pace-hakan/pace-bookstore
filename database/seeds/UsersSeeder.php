@@ -13,9 +13,9 @@ class UsersSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => 'Lord Valdemort',
-            'email' => 'valde@gmail.com',
-            'password' => bcrypt('secret')
+            'name' => 'Landum',
+            'email' => 'landum@gmail.com',
+            'password' => bcrypt('landum')
         ]);
         DB::table('users')->insert([
             'name' => 'Obi Wan Kenobi',
@@ -23,23 +23,13 @@ class UsersSeeder extends Seeder
             'password' => bcrypt('secret')
         ]);
         DB::table('users')->insert([
-            'name' => 'Ray Tango',
-            'email' => 'ray@gmail.com',
-            'password' => bcrypt('secret')
-        ]);
-        DB::table('users')->insert([
-            'name' => 'Lionel Messi',
-            'email' => 'messi@gmail.com',
-            'password' => bcrypt('secret')
-        ]);
-        DB::table('users')->insert([
-            'name' => 'Tom Cruise',
-            'email' => 'tom@gmail.com',
-            'password' => bcrypt('secret')
-        ]);
-        DB::table('users')->insert([
             'name' => 'Pace Creative',
             'email' => 'pace@gmail.com',
+            'password' => bcrypt('secret')
+        ]);
+        DB::table('users')->insert([
+            'name' => 'Lord Valdemort',
+            'email' => 'valde@gmail.com',
             'password' => bcrypt('secret')
         ]);
     }
