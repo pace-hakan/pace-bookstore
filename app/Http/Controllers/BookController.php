@@ -36,7 +36,7 @@ class BookController extends Controller
     public function store(Request $request)
     {
         auth()->user()->books()->create($request->all());
-        return redirect()->back()->with('message', 'Book added.');
+        return redirect('/book')->with('message', 'Book added.');
     }
 
     /**
