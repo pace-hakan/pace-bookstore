@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-body">
                     <x-alert />
-                    <form action="{{route('book.store')}}" method="post" class="d-flex justify-content-between">
+                    <form action="{{route('prefix.book.store')}}" method="post" class="d-flex justify-content-between">
                         @csrf
                         <input type="text" name="title" id="title" placeholder="Type the book title" />
                         <textarea name="description" id="description" placeholder="Type a descrition to the book"></textarea>

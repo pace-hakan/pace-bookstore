@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('book', 'BookController');
+Route::resource('book', 'BookController', [
+    'as' => 'prefix'
+]);
 
 Route::get('/', function () {
     return view('welcome');
