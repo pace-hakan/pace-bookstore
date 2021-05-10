@@ -9,8 +9,8 @@
                     <h4 class="pt-2">LIST OF THE BOOKS</h4>
                     <a href="{{route('prefix.book.create')}}"><span class="fas fa-plus-circle fa-2x pt-2" /></a>
                 </div>
+                <x-alert />
                 <div class="card-body">
-                    <x-alert />
                     <div class="card-title">Click on the titles to edit the entry.</div>
                     <p class="card-text">
                         <table class="table table-striped">

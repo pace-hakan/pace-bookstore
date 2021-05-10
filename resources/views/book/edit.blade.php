@@ -17,8 +17,8 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="card-body d-flex justify-content-center">
                 @endif
+                <div class="card-body d-flex justify-content-center">
                     <form action="{{route('prefix.book.update', $book->id)}}" method="post">
                         @csrf
                         @method('patch')
