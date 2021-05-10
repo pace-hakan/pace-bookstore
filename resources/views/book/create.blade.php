@@ -9,6 +9,15 @@
                 </div>
                 <div class="card-body">
                     <x-alert />
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                     <form action="{{route('prefix.book.store')}}" method="post" class="d-flex justify-content-between">
                         @csrf
                         <input type="text" name="title" id="title" placeholder="Type the book title" />

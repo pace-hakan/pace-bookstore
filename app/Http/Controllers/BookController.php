@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Http\Requests\BookCreateRequest;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -34,7 +36,7 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BookCreateRequest $request)
     {
         auth()->user()->books()->create($request->all());
         return redirect()->route('prefix.book.index')->with('message', 'Book added.');
