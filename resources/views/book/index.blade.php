@@ -11,9 +11,6 @@
                 </div>
                 <div class="card-body">
                     <x-alert />
-                    {{-- <h3 class="card-title">
-                        {{'BASLIK'}}
-                    </h3> --}}
                     <p class="card-text">
                         <table class="table table-striped">
                             <thead>
