@@ -50,7 +50,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
+        return view('book.show', compact('book'));
     }
 
     /**
@@ -85,6 +85,8 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //
+        //dd($book);
+        $book->delete();
+        return redirect()->route('prefix.book.index')->with('message', 'Book DELETED.');
     }
 }

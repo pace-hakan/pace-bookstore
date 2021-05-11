@@ -5,8 +5,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h4 class="pt-2">EDIT THE BOOK</h4>
-                    <a href="{{route('prefix.book.index')}}"><span class="fas fa-arrow-alt-circle-left fa-2x pt-2" /></a>
+                    <h4 class="pt-1">EDIT THE BOOK</h4>
+                    <a href="{{route('prefix.book.index')}}" class="btn btn-primary">BACK</a>
                 </div>
                 <x-alert />
                 @if ($errors->any())
@@ -26,7 +26,10 @@
                         <div class="pb-4"><input type="text" name="title" id="title" class="pl-2" value="{{$book->title}}" /></div>
                         <h4>Description</h4>
                         <div class="pb-4"><textarea name="description" id="description" class="p-2" rows="7" cols="64">{{$book->description}}</textarea></div>
-                        <div class="p-1"><input type="submit" value="Update" /></div>
+                        <div class="p-1">
+                            <input type="submit" value="UPDATE" class="btn btn-primary mr-2" />
+                            <a href="{{route('prefix.book.show', $book->id)}}" class="btn btn-danger">CANCEL</a>
+                        </div>
                     </form>
                 </div>
             </div>

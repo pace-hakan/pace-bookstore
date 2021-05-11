@@ -25,7 +25,7 @@
                         <div class="pb-4"><input type="text" name="title" id="title" class="pl-2" placeholder="Write the book title" /></div>
                         <h4>Description</h4>
                         <div class="pb-4"><textarea name="description" id="description" class="p-2" rows="7" cols="64" placeholder="Write the book description"></textarea></div>
-                        <div class="p-1"><input type="submit" value="Submit" /></div>
+                        <div class="p-1"><input type="submit" value="SUBMIT" class="btn btn-primary" /></div>
                     </form>
                 </div>
             </div>

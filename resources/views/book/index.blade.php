@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h4 class="pt-2">LIST OF THE BOOKS</h4>
-                    <a href="{{route('prefix.book.create')}}"><span class="fas fa-plus-circle fa-2x pt-2" /></a>
+                    <h4 class="pt-1">LIST OF THE BOOKS</h4>
+                    <a href="{{route('prefix.book.create')}}" class="btn btn-primary">ADD BOOK</a>
                 </div>
                 <x-alert />
                 <div class="card-body">
@@ -25,7 +25,7 @@
 @foreach ($allBooks as $book)
                                 <tr>
                                     <th scope="row"><?=++$r;?></th>
-                                    <td><a href="{{route('prefix.book.edit', $book->id)}}">{{$book->title}}</a></td>
+                                    <td><a href="{{route('prefix.book.show', $book->id)}}">{{$book->title}}</a></td>
                                     <td>{{$book->description}}</td>
                                 </tr>
 @endforeach

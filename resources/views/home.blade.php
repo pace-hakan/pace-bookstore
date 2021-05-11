@@ -25,7 +25,7 @@
                     <form action="/upload" method="post" enctype="multipart/form-data">
                         @csrf
                         <input type="file" name="image" />
-                        <input type="submit" value="Upload" />
+                        <input type="submit" value="UPLOAD" class="btn btn-primary" />
                     </form>
                 </div>
             </div>
