@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 @endif
-                <div class="card-body d-flex justify-content-center">
+                <div class="card-body d-flex justify-content-left">
                     <div>
                         <h4>Title</h4>
                         <div class="pb-4">{{$book->title}}</div>

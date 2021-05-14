@@ -11,7 +11,7 @@
                 </div>
                 <x-alert />
                 <div class="card-body">
-@forelse ($books as $book)
+
                     <div class="card-title">Click on the titles to edit the entry.</div>
                     <p class="card-text">
                         <table class="table table-striped">
@@ -23,19 +23,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                    @foreach ($books as $book)
+                                @forelse ($books as $book)                    {{-- @foreach ($books as $book) --}}
                                 <tr>
                                     <th scope="row"><?=++$r;?></th>
                                     <td><a href="{{route('prefix.book.show', $book->id)}}">{{$book->title}}</a></td>
                                     <td>{{$book->description}}</td>
                                 </tr>
-                    @endforeach
+                                @empty
+                                <tr>
+                                    <td class="card-title" colspan="3">There are no books in your account.</td>
+                                </tr>
+                                @endforelse
+                                {{-- @endforeach --}}
                             </tbody>
                         </table>
                     </p>
-@empty
-                    <div class="card-title">There are no books in your account.</div>
-@endforelse
                 </div>
             </div>
         </div>
