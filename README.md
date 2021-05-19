@@ -1,18 +1,20 @@
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+# Pace Bookstore
 
-## General info
-This project is simple Lorem ipsum dolor generator.
+## Table of Contents
+* [General Info](#general-info)
+* [Technologies Used](#technologies-used)
+* [How to Install](#how-to-install)
+
+## General Info
+This is a Laravel project to demonstrate my Laravel skills and knowledge.
 	
-## Technologies
+## Technologies Used
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* Laravel 7.0
+* PHP 7 or above
+* Bootstrap 4.0
 	
-## Setup
+## How to Install
 To run this project, install it locally using npm:
 
 ```
