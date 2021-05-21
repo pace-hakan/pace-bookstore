@@ -5,11 +5,11 @@
 * [Technologies Used](#technologies-used)
 * [How to Install](#how-to-install)
 
-<br />
+
 ## General Info
 This is a Laravel project to demonstrate my Laravel skills and knowledge.
 
-<br />
+
 ## Technologies Used
 Project is created with:
 * Laravel 7.0
