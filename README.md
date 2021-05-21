@@ -3,7 +3,7 @@
 ## Table of Contents
 * [General Info](#general-info)
 * [Technologies Used](#technologies-used)
-* [How to Install](#how-to-install)\
+* [How to Install](#how-to-install)
 
 ## General Info
 This is a Laravel project to demonstrate my Laravel skills and knowledge.\
