@@ -31,4 +31,5 @@ To run this project on your localhost;
 
 ## Run the Application
 You are ready to go
+
 php artisan serve
