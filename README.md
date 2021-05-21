@@ -15,7 +15,6 @@ Project is created with:
 * Laravel 7.0
 * PHP 7 or above
 * Bootstrap 4.0
-
 <br />
 ## How to Install
 To run this project, install it locally using npm:
