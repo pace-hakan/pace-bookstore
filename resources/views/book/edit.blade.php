@@ -26,6 +26,10 @@
                         <div class="pb-4"><input type="text" name="title" id="title" class="pl-2" value="{{$book->title}}" /></div>
                         <h4>Description</h4>
                         <div class="pb-4"><textarea name="description" id="description" class="p-2" rows="7" cols="64">{{$book->description}}</textarea></div>
+                        <h4>Date created</h4>
+                        <div class="pb-4 text-secondary">{{\Carbon\Carbon::createFromTimestamp(strtotime($book->created_at))->format('d-m-Y H:i:s')}}</div>
+                        <h4>Date last modified</h4>
+                        <div class="pb-4 text-secondary">{{\Carbon\Carbon::createFromTimestamp(strtotime($book->updated_at))->format('d-m-Y H:i:s')}}</div>
                         <div class="p-1">
                             <input type="submit" value="UPDATE" class="btn btn-primary mr-2" />
                             <a href="{{route('prefix.book.show', $book->id)}}" class="btn btn-danger">CANCEL</a>
