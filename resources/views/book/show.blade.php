@@ -5,8 +5,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h4 class="pt-2">BOOK INFORMATION</h4>
-                    <a href="{{route('prefix.book.index')}}"><span class="fas fa-arrow-alt-circle-left fa-2x pt-2" /></a>
+                    <h4 class="pt-1">BOOK INFORMATION</h4>
+                    <a href="{{route('prefix.book.index')}}" class="btn btn-primary">BACK</a>
                 </div>
                 <x-alert />
                 @if ($errors->any())
