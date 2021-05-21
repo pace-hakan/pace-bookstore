@@ -5,8 +5,9 @@
 * [Technologies Used](#technologies-used)
 * [How to Install](#how-to-install)
 
+<br />
 ## General Info
-This is a Laravel project to demonstrate my Laravel skills and knowledge.\
+This is a Laravel project to demonstrate my Laravel skills and knowledge.__
 
 ## Technologies Used
 Project is created with:
