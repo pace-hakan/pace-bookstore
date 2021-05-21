@@ -14,7 +14,7 @@ This is a Laravel project to demonstrate my Laravel skills and knowledge.
 Project is created with:
 * Laravel 7.0
 * PHP 7 or above
-* Bootstrap 4.0\
+* Bootstrap 4.0
 
 <br />
 ## How to Install
