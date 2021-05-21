@@ -32,6 +32,7 @@ To run this project on your localhost;
 ## Run the Application
 You are ready to go
 
-run : php artisan serve -> localhost:8000
-run : php artisan serve --port=ANY -> localhost:ANY
+Run : php artisan serve -> localhost:8000
+
+Run : php artisan serve --port=ANY -> localhost:ANY
 
