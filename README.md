@@ -29,10 +29,6 @@ To run this project on your localhost;
     - php artisan migrate
     - php artisan db:seed
 
-## Run the Application
-You are ready to go
+You are ready to go.
 
-Run : php artisan serve -> localhost:8000
-
-Run : php artisan serve --port=ANY -> localhost:ANY
 
