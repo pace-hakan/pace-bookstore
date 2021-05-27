@@ -5,12 +5,12 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h4 class="pt-1">EDIT THE BOOK</h4>
-                    <a href="{{route('prefix.book.index')}}" class="btn btn-primary">BACK</a>
+                    <h4 class="pt-2 pb-0 mb-0">EDIT THE BOOK</h4>
+                    <a href="{{route('prefix.book.index')}}" class="btn btn-primary pt-2">BACK</a>
                 </div>
                 <x-alert />
                 @if ($errors->any())
-                <div class="alert alert-danger mt-3">
+                <div class="alert alert-danger m-4">
                     <ul class="mb-0">
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>

@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
-                    <h4 class="pt-1">LIST OF THE BOOKS</h4>
-                    <a href="{{route('prefix.book.create')}}" class="btn btn-primary">ADD BOOK</a>
+                    <h4 class="pt-2 pb-0 mb-0">LIST OF THE BOOKS</h4>
+                    <a href="{{route('prefix.book.create')}}" class="btn btn-primary pt-2">ADD BOOK</a>
                 </div>
                 <x-alert />
                 <div class="card-body">
