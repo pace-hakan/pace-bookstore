@@ -24,14 +24,14 @@
                         <div class="pb-4">{{$book->title}}</div>
                         <h4>Description</h4>
                         <div class="pb-4">{{$book->description}}</div>
-                        <h4>Date created</h4>
-                        <div class="pb-4">{{\Carbon\Carbon::createFromTimestamp(strtotime($book->created_at))->format('d-m-Y H:i:s')}}</div>
-                        <h4>Date last modified</h4>
-                        <div class="pb-4">{{\Carbon\Carbon::createFromTimestamp(strtotime($book->updated_at))->format('d-m-Y H:i:s')}}</div>
-                        <a href="{{route('prefix.book.edit', $book->id)}}" class="btn btn-primary mr-2">EDIT</a>
-                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
-                            DELETE
-                        </button>
+                        <div class="pb-2"><span class="font-weight-bold pr-2">Created at</span> {{\Carbon\Carbon::createFromTimestamp(strtotime($book->created_at))->format('d-m-Y H:i:s')}}</div>
+                        <div class="pb-2"><span class="font-weight-bold pr-2">Modified at</span> {{\Carbon\Carbon::createFromTimestamp(strtotime($book->updated_at))->format('d-m-Y H:i:s')}}</div>
+                        <div class="pt-4">
+                            <a href="{{route('prefix.book.edit', $book->id)}}" class="btn btn-primary mr-2">EDIT</a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                                DELETE
+                            </button>
+                        </div>
                     </div>
                 </div>
 
