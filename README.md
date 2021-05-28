@@ -21,7 +21,7 @@ Project is created with:
 To run this project on your localhost;
 
 + Clone the project: 
-`git clone git@github.com:pace-hakan/pace-bookstore.git`
+```git clone git@github.com:pace-hakan/pace-bookstore.git```
 + Go into the folder application: `cd pace-bookstore`
 + Copy the .env.example file to .env in the root folder: `cp .env.example .env`
 + Open the .env file and change the database credentials according to your config.
