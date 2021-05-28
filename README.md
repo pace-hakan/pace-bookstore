@@ -20,7 +20,7 @@ Project is created with:
 ## How to Install
 To run this project on your localhost;
 
-+ Clone the project: 
+#Clone the project: 
 ```
 git clone git@github.com:pace-hakan/pace-bookstore.git
 ```
