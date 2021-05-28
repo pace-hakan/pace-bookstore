@@ -34,24 +34,26 @@ cd pace-bookstore
 ```
 cp .env.example .env
 ```
-+ Open the .env file and change the database credentials according to your config.
-+ To get dependencies run:
+
+**Open the .env file and change the database credentials according to your config.**
+**To get dependencies run:**
 ```
 composer install
 ```
-+ Run:
+
+**Run:**
 ```
 php artisan key:generate
 ```
-+ Run:
+
+**Run:**
 ```
 php artisan migrate
 ```
-+ Run:
+
+**Run:**
 ```
 php artisan db:seed
 ```
 
 You are ready to go.
-
-
