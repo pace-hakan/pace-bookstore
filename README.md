@@ -24,11 +24,13 @@ To run this project on your localhost;
 ```
 git clone git@github.com:pace-hakan/pace-bookstore.git
 ```
-+ Go into the folder application:
+
+**Go into the folder application:**
 ```
 cd pace-bookstore
 ```
-+ Copy the .env.example file to .env in the root folder:
+
+**Copy the .env.example file to .env in the root folder:**
 ```
 cp .env.example .env
 ```
