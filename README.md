@@ -28,11 +28,23 @@ To run this project on your localhost;
 + Run
 ```
 git clone git@github.com:pace-hakan/pace-bookstore.git
+```
+```
 cd pace-bookstore
+```
+```
 cp .env.example .env
+```
+```
 composer install
+```
+```
 php artisan key:generate
+```
+```
 php artisan migrate
+```
+```
 php artisan db:seed
 ```
 
