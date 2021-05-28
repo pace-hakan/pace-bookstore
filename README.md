@@ -20,12 +20,12 @@ Project is created with:
 ## How to Install
 To run this project on your localhost;
 
-+Clone the project
-+Go into the folder application
-+Copy the .env.example file to .env in the root folder
-+Open the .env file and change the database credentials according to your config
-+To get dependencies run
-+Run
++ Clone the project
++ Go into the folder application
++ Copy the .env.example file to .env in the root folder
++ Open the .env file and change the database credentials according to your config
++ To get dependencies run
++ Run
 ```
 git clone git@github.com:pace-hakan/pace-bookstore.git
 cd pace-bookstore
