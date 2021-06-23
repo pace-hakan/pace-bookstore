@@ -26,8 +26,8 @@
                         <div class="pb-4"><input type="text" name="title" id="title" class="pl-2 form-control" value="{{$book->title}}" /></div>
                         <h4>Description</h4>
                         <div class="pb-4"><textarea name="description" id="description" class="p-2 form-control" rows="7" cols="64">{{$book->description}}</textarea></div>
-                        <div class="pb-2 text-secondary"><span class="font-weight-bold pr-2">Created at</span> {{\Carbon\Carbon::createFromTimestamp(strtotime($book->created_at))->format('d-m-Y H:i:s')}}</div>
-                        <div class="pb-2 text-secondary"><span class="font-weight-bold pr-2">Modified at</span> {{\Carbon\Carbon::createFromTimestamp(strtotime($book->updated_at))->format('d-m-Y H:i:s')}}</div>
+                        <div class="pb-2 text-secondary"><span class="font-weight-bold pr-2">Created at</span> {{$book->created_at}}</div>
+                        <div class="pb-2 text-secondary"><span class="font-weight-bold pr-2">Modified at</span> {{$book->updated_at}}</div>
                         <div class="pt-4">
                             <input type="submit" value="UPDATE" class="btn btn-primary mr-2" />
                             <a href="{{route('prefix.book.show', $book->id)}}" class="btn btn-danger">CANCEL</a>

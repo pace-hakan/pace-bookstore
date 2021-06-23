@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('book', 'BookController', [
     'as' => 'prefix'
-]);
+])->middleware('auth');
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->middleware('auth')->name('home');
 
 Route::get('/user', 'UserController@index');
-Route::post('/upload', 'UserController@uploadAvatar');
+Route::post('/upload', 'UserController@uploadAvatar')->name('user.upload');

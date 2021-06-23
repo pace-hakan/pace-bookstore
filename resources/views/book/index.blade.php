@@ -1,5 +1,4 @@
 @extends('layouts.app')
-<? $r=0; ?>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -25,7 +24,7 @@
                             <tbody>
                                 @forelse ($books as $book)                    {{-- @foreach ($books as $book) --}}
                                 <tr>
-                                    <th scope="row"><?=++$r;?></th>
+                                    <th scope="row">@php echo $loop->iteration @endphp</th>
                                     <td><a href="{{route('prefix.book.show', $book->id)}}">{{$book->title}}</a></td>
                                     <td>{{$book->description}}</td>
                                 </tr>

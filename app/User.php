@@ -47,7 +47,7 @@ class User extends Authenticatable
 
     protected function deleteOldAvatar() {
         if (isset(auth()->user()->avatar)) {
-            Storage::delete('/public/images/'.auth()->user()->avatar);
+            Storage::delete('/storage/images/'.auth()->user()->avatar);
         }
     }
 
